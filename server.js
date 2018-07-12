@@ -16,7 +16,7 @@ router.get('/api/locations', function*() {
 });
 
 async function test() {
-    return await request('http://characters/api/characters', { json: true }, (err, res, body) => {
+    return await request('http://characters.dev/api/characters', { json: true }, (err, res, body) => {
         if (err) { return console.log(err); }
         console.log(body);
         return "body";
